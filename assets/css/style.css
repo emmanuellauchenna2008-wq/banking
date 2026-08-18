@@ -1,0 +1,109 @@
+
+:root {
+    --background:  #010309;
+      --backgroundT:  #01030950;
+    --foreground:  #f4f2ea;
+    --card: #040913;
+    --card-foreground: #faf2ea;
+    --popover: #040913;
+    --primary: #e3a500;
+    --primaryT: #e3a50040;
+    --primaryD: #3d2d02;
+    --primary-foreground: #03060d;
+    --secondary: #0e1624;
+    --secondary-foreground: #e0ded7;
+    --muted: #18202b;
+    --muted-foreground: #9c988b;
+    --accent: #d08b00;
+    --accent-foreground: #03060d;
+    --destructive: #e62b34;
+    --destructive-foreground: #f8f8f8;
+    --border: #1d2430;
+    --input: #0f1621;
+    --zinc950: #0b0809;
+    --zinc900: #1b1718;
+    --black:#000000;
+    --emerald: #00d492;
+     --emeraldT: #00d49260;
+     --bgcard:#040913;
+     --blue:#002163;
+}
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: smooth;
+    scroll-behavior: smooth;
+}
+.gradient-bg{
+    background: linear-gradient(-45deg, var(--zinc950), var(--zinc900), var(--black));
+}
+.card{
+    border:1px solid var(--border);
+    padding: 10px;
+    border-radius: 10px;
+}
+body{
+    background-color: var(--background);
+}
+.bgt{
+     background-color: var(--backgroundT);
+}
+.icon{
+    background-color: var(--primaryT);
+    color: var(--primary);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    border: 1px solid var(--border);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+background: none;
+border: none;
+color: var(--foreground);
+}
+.fintechUserCont{
+
+}
+.ybd-gradient-bg{
+    background: linear-gradient(110deg,var(--bgcard)70%,var(--primaryD),var(--blue))
+}
+.topnavigate{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: var(--primary);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 2s infinite ease-in-out;
+}
+.toplink{
+    color: var(--primary-foreground);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
